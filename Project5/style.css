@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+    font-family: sans-serif, Tahoma, Geneva, Verdana;
+    line-height: 1.5;
+}
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+html {
+    color: var(--main-white);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+/* Header */
+#header {
+    background: var(--main-red);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+#nav-bar {
+    margin-right: 2rem;
+}
+
+#nav-bar ul {
+    display: flex;
+}
+
+#nav-bar ul li a {
+    display: block;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+
+#nav-bar ul li a:hover {
+    background: var(--main-blue);
+}
+
+/* End Header */
+/* Start Introduction */
+#introduction {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#introduction h1 {
+    font-size: 3rem;
+    color: var(--main-white);
+}
+
+#introduction p {
+    font-size: 2rem;
+    color: var(--main-red);
+    font-style: italic;
+}
+
+/* End Introduction */
+/* Start My Project */
+#my-projects {
+    background: var(--main-blue);
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+#my-projects h2 {
+    margin: 0 auto 3rem auto;
+    max-width: 640px;
+    border-bottom: 0.1rem solid var(--main-white);
+    font-size: 2.1rem;
+}
+#my-projects .list-project{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+#my-projects .list-project .list-project-item {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 320px;
+    margin: 2rem;
+    background: var(--main-gray);
+    border-radius: 2px;
+}
+
+#my-projects .list-project .list-project-item .project-img{
+    width: 100%;
+    height:calc(100% - 3rem);
+    object-fit: cover;
+}
+
+.list-project-item .project-title{
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0.2rem;
+    background-color: var(--main-gray);
+}
+
+#my-projects > a{
+    display: block;
+    background:var(--main-gray);
+    padding:0.8rem 1.5rem;
+    border-radius: 3px;
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+    max-width:15rem;
+}
+#my-projects > a:hover{
+    background: var(--main-red);
+}
+
+#my-projects .ti-angle-right {
+    font-weight: 700;
+}
+/* End My Project */
+/* Start contact */
+#contact{
+    width: 100%;
+    background: var(--main-gray);
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#contact h2{
+    font-size: 3.5rem;
+}
+
+#contact p{
+    font-style: italic;
+}
+
+#contact .contact-link{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;    
+    flex-wrap: wrap;
+}
+#contact .contact-link a{
+    padding:0.5rem 1.5rem;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+#contact .contact-link a span{
+    margin-right: 0.3rem;
+}
+/* End contact */
+/* Start footer */
+footer{
+    width: 100%;
+    background: var(--main-gray);
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 300;
+    border-top: 4px solid var(--main-red);
+    padding: 2rem;
+}
+footer p{
+    margin: 1rem;
+}
+/* End footer */

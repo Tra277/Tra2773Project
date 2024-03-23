@@ -1,0 +1,35 @@
+
+/* Breakpoint thông dụng */
+body{
+    display: flex;
+    background-color: orange;
+    height:100vh;
+}
+
+.tablet,.mobile,.pc{
+    margin: auto;
+    font-size: 100px;
+    color: #fff;
+    display: none;
+}
+@media screen and (max-width:46.1875em) {
+    .mobile{
+        display: block;
+    }
+}
+@media screen and (min-width:46.25em) and (max-width:63.9375em) {
+    .tablet{
+        display: block;
+    }
+}
+
+@media screen and (min-width:64em) {
+    .pc{
+        display: block;
+    }
+}
+
+/* Mobile: width < 740px */
+/* tablet : width >= 740px and width < 1024px */
+/* desktop : width >=1024px */
+/* Nên chuyển đổi px sang em trong media query để tránh nhiều lỗi */

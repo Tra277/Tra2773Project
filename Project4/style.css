@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header */
+#page-header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    min-height: 75px;
+    background-color: #eee;
+}
+
+#page-header .logo {
+    width: 60vw;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#nav-bar ul {
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-bar li {
+    list-style: none;
+    cursor: pointer;
+}
+
+#nav-bar li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Hero section */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+#hero h2 {
+    margin-bottom: 20px;
+}
+
+#page-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#page-form input[type="email"] {
+    padding: 5px;
+    width: 100%;
+}
+
+#page-form #submit-btn {
+    max-width: 150px;
+    height: 30px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 20px;
+    background-color: #f1c40f;
+    border-radius: 2px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/* Main container */
+/* 1- Features */
+#features {
+    margin-top: 30px;
+}
+
+#features .feature-item {
+    display: flex;
+}
+
+#features .feature-item .feature-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+
+#features .feature-item .feature-icon span {
+    font-size: 3em;
+    font-weight: 900;
+}
+
+#features .feature-item .feature-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    height: 125px;
+    width: 80vw;
+}
+/* 2-How It works */
+#how-it-works{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 3-Pricing */
+#pricing{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+#pricing .pricing-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin:10px;
+    border: #000 solid 1px;
+    border-radius: 3px;
+}
+
+#pricing .pricing-item .pricing-item-header{
+    background-color: #ddd;
+    padding:15px 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#pricing .pricing-item h2{
+    margin-top: 15px;
+}
+
+#pricing .pricing-item ul{
+    margin: 15px 0;
+}
+
+#pricing .pricing-item .pricing-btn{
+    margin:15px 0;
+    border: 0;
+    background-color: darkorange;
+    font-weight: 500;
+    height:40px;
+    width: 102px;
+    border-radius: 5px;
+}
+
+#pricing .pricing-item .pricing-btn:hover{
+    background-color: #f1c40f;
+}
+
+/* Footer */
+footer{
+    margin-top: 30px;
+    padding: 20px;
+    background: #ddd;
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li{
+    padding:0 10px;
+}
+
+footer span{
+    display: flex;
+    justify-content: flex-end;
+    color: #444;
+}
+
+@media screen and (max-width:739px) {
+    #page-header {
+        flex-direction: column;
+        align-items: center;
+    };
+    #nav-bar ul {
+        width: 100%;
+        justify-content: center;
+        
+    }
+    #nav-bar ul li{
+        padding: 0.5rem;
+        width: min-content;
+    }
+    #page-header .logo{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    #header-img {
+        margin: 0 auto;
+    }
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+    #pricing .pricing-item{
+        width: 320px;
+        max-width: 100%;
+    }
+}

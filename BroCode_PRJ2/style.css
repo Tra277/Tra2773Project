@@ -1,0 +1,36 @@
+.gameDiv{
+    margin: auto;
+    width: 20vw;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border: black solid 3px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#player{
+    color: blue;
+}
+
+#computer{
+    color: red;
+}
+
+.user-choice{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.user-choice button{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.user-choice button:hover{
+    background-color: black;
+    color: #fff;
+}

@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container {
+    background: linear-gradient(135deg,#153677,#4e085f);
+    width: 100%;
+    min-height: 100vh;
+    padding:10px;
+}
+
+.toDo-app{
+    width: 100%;
+    max-width: 540px;
+    margin: 70px auto 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.toDo-app h2{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding:10px 20px ;
+}
+.toDo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    background-color: #eee;
+    justify-content: space-between;    
+    border-radius: 16px;
+    margin-top: 1rem;
+}
+.row input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+.row button{
+    border: 0;
+    outline: 0;
+    background-color: orangered;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.task-list{
+    margin: 1rem;
+}
+.task-list li{
+    list-style: none;
+    font-size: large;
+    padding: 1rem 2.5rem;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.task-list li::before{
+    content:'';
+    width: 28px;
+    height: 28px;
+    background-image: url(/images/unchecked.png);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+.task-list li.checked{
+    color: #ddd;
+    text-decoration: line-through;
+}
+.task-list li.checked::before{
+    background-image: url(/images/checked.png);
+}
+.task-list li:hover{
+    box-shadow: 5px 5px 5px #888888;
+    border:1px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.task-list li span{
+     display: block;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 0.5rem 0.6rem;
+    border-radius: 50%;
+    color: red;
+}
+
+.task-list li span:hover{
+    background: #eee;
+}
+
+
+
+
